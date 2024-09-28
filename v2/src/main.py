@@ -5,7 +5,7 @@ from fastapi.responses import HTMLResponse
 app = FastAPI()
 
 
-@app.get("/app")
-async def root():
+@app.get("/app/")
+async def root(): 
     return HTMLResponse(content="Hello there from core root v2", status_code=200)
  
