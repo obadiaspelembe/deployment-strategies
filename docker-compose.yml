@@ -1,0 +1,26 @@
+services:
+  
+
+# LOAD BALANCER
+  web:
+    build: network
+    ports:
+      - 8080:8080 
+      - 80:80 
+ 
+# CORE AND FUNCTIONS
+  app-instance-1:
+    build: 
+      context: ./v1
+  
+  app-instance-2:
+    build: 
+      context: ./v1
+
+  app-instance-3:
+    build: 
+      context: ./v1
+  
+  app-instance-4:
+    build: 
+      context: ./v1
